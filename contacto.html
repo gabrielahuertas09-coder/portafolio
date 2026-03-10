@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Portafolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="subpage-container">
+        <a href="index.html" class="back-link">← Volver al inicio</a>
+
+        <header class="subpage-header">
+            <h1 class="subpage-title">Contacto</h1>
+        </header>
+
+        <section class="section-content">
+            <form class="contact-form" action="mailto:gabrielahuertas09@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="¿En qué puedo ayudarte?">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                </div>
+                <div class="back-btn-container" style="justify-content: flex-start;">
+                    <button type="submit" class="nav-btn" style="cursor: pointer; border: none; font-family: inherit; font-size: 0.9rem; padding: 0.8rem 1.5rem;">Enviar Mensaje ✉</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
